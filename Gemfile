@@ -29,3 +29,7 @@ gem "inherited_resources"
 gem 'state_machine'
 
 gem 'randumb'
+
+gem 'bootstrap-generators', '~> 2.0'
+
+gem 'simple_form', '~> 2.0'
