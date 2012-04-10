@@ -6,10 +6,6 @@ class RulesController < ApplicationController
   def random
     @rule = Rule.with_state(:approved).random
     @new_rule = Rule.new()
-    respond_to do |format|
-      format.html { render }
-      format.js   { render }
-    end
   end
 
   def create
