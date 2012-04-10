@@ -1,5 +1,9 @@
 <div class="hero-unit">
-  <h1 id="random_rule"><%= @rule.rule_text %></h1>
+  <% if @rule %>
+    <h1 id="random_rule"><%= @rule.rule_text %></h1>
+  <% else %>
+    <h1>No rules yet :</h1>
+  <% end %>
   <br />
   <p>
     <%= link_to "Give me another!", :root, :remote => true, :update => 'random_rule', :class => "btn btn-primary btn-large" %>
