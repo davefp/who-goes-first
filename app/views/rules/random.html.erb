@@ -1,13 +1,14 @@
 <div class="hero-unit">
   <h2>Who goes first?</h2>
-  <h1><%= @rule.rule_text %></h1>
+  <h1 id="random_rule"><%= @rule.rule_text %></h1>
   <br />
   <p>
-    <%= link_to "Give me another!", :root, :class => "btn btn-primary btn-large" %>
+    <%= link_to "Give me another!", :root, :remote => true, :update => 'random_rule', :class => "btn btn-primary btn-large" %>
   </p>
 </div>
 <div class="row">
-<div class="span12">
-<%= render "form" %>
-</div>
+  <div class="span12">
+    <h2>Don't like our suggestions? Add one of your own!</h2>
+    <%= render "form" %>
+  </div>
 </div>
