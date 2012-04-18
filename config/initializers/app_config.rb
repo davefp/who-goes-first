@@ -1,1 +1,1 @@
-AppConfig = YAML.load(File.read(Rails.root + 'config' + 'config.yml'))[Rails.env].with_indifferent_access
+AppConfig = YAML.load_file('config/config.yml')
