@@ -3,9 +3,11 @@ Whogoesfirst::Application.routes.draw do
 
   devise_for :admin_users, ActiveAdmin::Devise.config
   
-  resources :rules
+  resources :rules, :only => [:index, :create]
   
   match 'random' => 'rules#random'
+
+  match 'contact' => 'contact#create', :via => :post
 
   root :to => "rules#random"
 end

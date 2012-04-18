@@ -1,0 +1,11 @@
+
+<%= form_tag('/contact', :method => :post, :class => "well") do %>
+  <label>Name</label>
+  <%= text_field_tag 'message[name]' %>
+  <label>Email</label>
+  <%= text_field_tag 'message[email]' %>
+  <label>Message</label>
+  <%= text_area_tag 'message[body]', '', :rows => 5 %>
+  <br />
+  <%= submit_tag "Message Away!", :class => "btn" %>
+<% end %>

@@ -1,3 +1,10 @@
+GIT
+  remote: git://github.com/decioferreira/bootstrap-generators.git
+  revision: abaa1484065764f0d18a34c9d8d6ad4002cf1eda
+  specs:
+    bootstrap-generators (2.0.1)
+      railties (~> 3.1)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -42,8 +49,6 @@ GEM
     addressable (2.2.7)
     arel (3.0.2)
     bcrypt-ruby (3.0.1-x86-mingw32)
-    bootstrap-generators (2.0.1)
-      railties (~> 3.1)
     bourbon (1.4.0)
       sass (>= 3.1)
     builder (3.0.0)
@@ -165,7 +170,7 @@ PLATFORMS
 
 DEPENDENCIES
   activeadmin
-  bootstrap-generators (~> 2.0)
+  bootstrap-generators (~> 2.0)!
   coffee-rails (~> 3.2.1)
   heroku
   inherited_resources

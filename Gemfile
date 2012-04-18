@@ -35,7 +35,7 @@ gem 'state_machine'
 
 gem 'randumb'
 
-gem 'bootstrap-generators', '~> 2.0'
+gem 'bootstrap-generators', '~> 2.0', :git => 'git://github.com/decioferreira/bootstrap-generators.git'
 
 gem 'simple_form', '~> 2.0'
 
