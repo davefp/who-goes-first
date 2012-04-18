@@ -1,1 +1,1 @@
-AppConfig = YAML.load_file('config/config.yml')
+AppConfig = (YAML.load_file('config/config.yml')[RAILS_ENV] rescue {}).merge(ENV)
