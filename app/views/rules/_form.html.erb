@@ -1,5 +1,5 @@
 <%= form_for @new_rule, :url => { :action => "create" }, :html => {:class => "well"} do |f| %>
-  <%= f.text_area :rule_text, :rows => 2 %>
+  <%= f.text_area :rule_text, :rows => 2, :class => 'span3' %>
   <br />
   <%= f.submit "Create", :class => "btn" %>
 <% end %>
