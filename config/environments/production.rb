@@ -66,4 +66,5 @@ Whogoesfirst::Application.configure do
   # config.active_record.auto_explain_threshold_in_seconds = 0.5
   config.action_mailer.default_url_options = {:host => 'whogoesfirst.herokuapp.com'}
   config.assets.precompile += ['active_admin.js', 'active_admin.css']
+  GA.tracker = "UA-31686359-1"
 end

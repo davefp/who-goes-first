@@ -70,6 +70,7 @@ GEM
     fastercsv (1.5.4)
     formtastic (2.1.1)
       actionpack (~> 3.0)
+    google-analytics-rails (0.0.2)
     has_scope (0.5.1)
     heroku (2.20.1)
       launchy (>= 0.3.2)
@@ -172,6 +173,7 @@ DEPENDENCIES
   activeadmin
   bootstrap-generators (~> 2.0)!
   coffee-rails (~> 3.2.1)
+  google-analytics-rails
   heroku
   inherited_resources
   jquery-rails

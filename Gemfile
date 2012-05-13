@@ -40,3 +40,5 @@ gem 'bootstrap-generators', '~> 2.0', :git => 'git://github.com/decioferreira/bo
 gem 'simple_form', '~> 2.0'
 
 gem 'heroku'
+
+gem 'google-analytics-rails'
