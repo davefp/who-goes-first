@@ -65,6 +65,6 @@ Whogoesfirst::Application.configure do
   # with SQLite, MySQL, and PostgreSQL)
   # config.active_record.auto_explain_threshold_in_seconds = 0.5
   config.action_mailer.default_url_options = {:host => 'whogoesfirst.herokuapp.com'}
-  config.assets.precompile += ['active_admin.js', 'active_admin.css', 'print.css']
+  config.assets.precompile += ['active_admin.js', 'active_admin.css', 'active_admin/print.css']
   GA.tracker = "UA-31686359-1"
 end
