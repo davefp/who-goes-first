@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.1'
+gem 'rails', '~> 3.2'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -42,3 +42,4 @@ gem 'simple_form', '~> 2.0'
 gem 'heroku'
 
 gem 'exceptional'
+gem 'google-analytics-rails'
