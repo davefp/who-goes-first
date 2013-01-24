@@ -7,6 +7,7 @@ gem 'rails', '~> 3.2.11'
 
 group :development, :test do
   gem 'sqlite3'
+  gem 'quiet_assets'
 end
 group :production do
   gem 'pg'
@@ -42,3 +43,5 @@ gem 'heroku'
 
 gem 'exceptional'
 gem 'google-analytics-rails'
+
+gem 'thin'
