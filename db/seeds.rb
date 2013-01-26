@@ -5,3 +5,7 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+Rule.destroy_all
+
+Rule.create(:rule_text => "The person with the longest hair goes first", :state => "approved")
