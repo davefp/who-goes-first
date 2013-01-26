@@ -9,3 +9,4 @@
 Rule.destroy_all
 
 Rule.create(:rule_text => "The person with the longest hair goes first", :state => "approved")
+Rule.create(:rule_text => "The cat goes first", :state => "approved")
