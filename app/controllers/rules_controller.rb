@@ -7,7 +7,6 @@ class RulesController < ApplicationController
 
   def random
     @rule = Rule.with_state(:approved).random
-    render :show
   end
 
   def show
