@@ -8,6 +8,11 @@ class RulesController < ApplicationController
     @new_rule = Rule.new()
   end
 
+  def show
+    @rule = Rule.find(params[:id])
+    render :status => 404 unless @rule && @rule.approved?
+  end
+
   def create
     Rule.create(params[:rule])
     flash[:notice] = "Thanks! Your rule has been submitted for moderation."
