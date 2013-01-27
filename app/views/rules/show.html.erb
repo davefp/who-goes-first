@@ -6,6 +6,7 @@
   <% end %>
   <br />
   <p>
-    <%= link_to "Give me another!", :root, :remote => true, :class => "btn btn-primary btn-large" %>
+    <%= link_to "Give me another!", :root, :remote => params[:action] == 'random', :class => "btn btn-primary btn-large" %>
+    <%= link_to "permalink for this rule", rule_path(@rule), :id => "rule-permalink" %>
   </p>
 </div>

@@ -4,8 +4,6 @@ Whogoesfirst::Application.routes.draw do
   devise_for :admin_users, ActiveAdmin::Devise.config
   
   resources :rules, :only => [:index, :create, :show]
-  
-  get 'random' => 'rules#random'
 
   post 'contact' => 'contact#create'
 
